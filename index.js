@@ -36,7 +36,7 @@ function produtos(event) {
 }
 function ordenarPorValor() {
   const listaDeProdutos = document.getElementById("listaDeProdutos");
-  const linhas = Array.from(listaDeProdutos.rows); // sempre que a uma interação um array é criado
+  const linhas = Array.from(listaDeProdutos.rows);
 
   while (listaDeProdutos.firstChild) {
     listaDeProdutos.removeChild(listaDeProdutos.firstChild);
