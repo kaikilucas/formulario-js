@@ -38,6 +38,12 @@ function ordenarPorValor() {
   const listaDeProdutos = document.getElementById("listaDeProdutos");
   const linhas = Array.from(listaDeProdutos.rows);
 
+  linhas.sort((a, b) => {
+    const valorA = parseFloat(a.cells[1].textContent);
+    const valorB = parseFloat(b.cells[1].textContent);
+    return valorA - valorB;
+  });
+
   while (listaDeProdutos.firstChild) {
     listaDeProdutos.removeChild(listaDeProdutos.firstChild);
   }
