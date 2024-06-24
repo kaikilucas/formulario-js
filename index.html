@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header"><h1>FORMULÁRIO</h1></header>
+    <section>
+      <form id="">
+        <div class="produto">
+          <label for="nome">Nome do Produto</label>
+          <input type="text" id="nome" />
+          <label for ="descricao">Descrição do Produto</label>
+          <input type="text" id="descricao" />
+          <label for="valor">Valor do Produto</label>
+          <input type="number" id="valor" />
+          <div class="selecao">
+            <label for="sim">Disponível para venda</label>
+
+            <input type="radio" value="sim" id="sim" name="opcao" />
+            <label for="sim">Sim</label>
+
+            <input type="radio" value="nao" id="nao" name="opcao" />
+            <label for="nao">Não</label>
+          </div>
+          <button type="submit" onclick="produtos(event)">Cadastrar Produto</button>
+          <div class="tableDiv">
+            <table>
+              <thead>
+                <tr class="tr">
+                  <th>Nome</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody id="listaDeProdutos">
+              </tbody>
+            </table>
+          </div>
+      </form>
+    </section>
+    
+  </div>
+    <footer>&copy; Kaiki Lucas Dev</footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
